@@ -45,15 +45,21 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  background-color: red;
 }
 
 header > nav > a {
   display: block;
   width: 49px;
-  padding-right: 32px;
-  padding-left: 32px;
+  /* padding-right: 32px;
+  padding-left: 32px; */
 }
+
+.container .link-list .link,
+.auth-nav {
+  display: inline-block;
+  margin: 32px 50px 32px;
+}
+
 .link,
 .auth-nav {
   text-decoration: none;
@@ -66,7 +72,7 @@ header > nav > a {
   color: var(--title-text-color);
 }
 .auth-nav {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,9 +91,7 @@ header > nav > a {
 .link:focus {
   color: var(--accent-color);
 }
-.auth-nav {
-  color: var(--primary-text-color);
-}
+
 .auth-nav:hover,
 .auth-nav:focus {
   color: var(--accent-color);
@@ -210,11 +214,7 @@ img {
 .section-div .section-list .list {
   padding: 94px 30px;
 }
-.container .link-list > li,
-.auth-nav {
-  display: inline;
-  margin: 32px 50px 32px;
-}
+
 /* teem */
 .section-teem {
   background-color: #f5f4fa;
