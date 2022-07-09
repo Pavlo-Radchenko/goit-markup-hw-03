@@ -32,13 +32,15 @@
 .page-logo:focus {
   color: var(--accent-color);
 }
-
+nav {
+  display: inline-block;
+}
 /* body */
 .page {
   box-sizing: border-box;
 }
-/* site-nav */
 
+/* site-nav */
 .page-header .link-list {
   list-style: none;
   font-weight: 500;
@@ -48,13 +50,11 @@
 }
 
 header > nav > a {
-  display: block;
+  display: inline-block;
   width: 49px;
-  /* padding-right: 32px;
-  padding-left: 32px; */
 }
 
-.container .link-list .link,
+.container .link,
 .auth-nav {
   display: inline-block;
   margin: 32px 50px 32px;
@@ -236,6 +236,7 @@ img {
 .footer {
   background-color: #2f303a;
 }
+
 .footer .footer-link {
   color: var(--primary-white-color);
   font-size: 14px;
