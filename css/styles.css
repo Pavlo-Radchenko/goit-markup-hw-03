@@ -43,6 +43,7 @@ p {
   text-decoration: none;
 
   padding: 0;
+  margin-right: 93px;
 }
 
 .page-logo .accent {
@@ -77,7 +78,7 @@ header .container {
   letter-spacing: 0.02em;
   display: flex;
   gap: 30px;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .page-header {
@@ -92,7 +93,7 @@ header > nav > a {
 .container .link,
 .auth-nav {
   display: inline-block;
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .link,
@@ -162,9 +163,9 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: 0 auto;
 
-  height: 80px;
+  width: 1200px;
 }
 
 /* hero */
@@ -175,6 +176,7 @@ body {
   margin-right: auto; */
   text-align: center;
   background-image: -moz-element();
+  padding-bottom: 94px;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -211,12 +213,20 @@ body {
   background-color: #f5f4fa;
 }
 
-.section-div h3 {
+.container.div h3 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
 /* section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 img {
   display: block;
 }
@@ -268,13 +278,13 @@ img {
   text-align: left;
 }
 
-.section-div {
+.container.div {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
-.section-div .section-list {
+.container.div .section-list {
   display: flex;
   gap: 30px;
 }
@@ -288,7 +298,7 @@ img {
 }
 
 /* teem */
-.section-teem {
+.section.teem {
   background-color: #f5f4fa;
   text-align: center;
   padding-bottom: 94px;
@@ -324,7 +334,6 @@ img {
 
 .clients {
   padding-top: 94px;
-  margin-bottom: 94px;
 }
 
 .clients-item {
@@ -452,7 +461,9 @@ img {
   margin-left: 24px;
 }
 .portfolio-title {
-  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .portfolio-title section {
@@ -477,6 +488,7 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 94px;
 }
 
 .container-list {
