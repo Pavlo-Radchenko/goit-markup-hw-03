@@ -77,7 +77,7 @@ header .container {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  gap: 30px;
+  gap: 50px;
   margin-left: auto;
 }
 
@@ -177,6 +177,8 @@ body {
   text-align: center;
   background-image: -moz-element();
   padding-bottom: 94px;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -188,8 +190,6 @@ body {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
-
-  padding-top: 200px;
 }
 .hero-button {
   color: var(--primary-white-color);
@@ -202,7 +202,6 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
   border-style: none;
-  margin-bottom: 200px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -214,7 +213,6 @@ body {
 }
 
 .container.div h3 {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -225,6 +223,10 @@ body {
   padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section.wwd {
+  padding-top: 0;
 }
 
 img {
@@ -256,8 +258,8 @@ img {
 }
 
 .section {
-  width: 1200px;
-  align-items: center;
+  /* width: 1200px;
+  align-items: center; */
 }
 
 .section-list .list {
@@ -281,7 +283,6 @@ img {
 .container.div {
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 94px; */
 }
 
 .container.div .section-list {
@@ -291,7 +292,7 @@ img {
 
 .section-list .list {
   width: 270px;
-  height: 251px;
+
   margin-right: auto;
   margin-left: auto;
   align-items: center;
@@ -322,12 +323,18 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 0;
 }
 .teem-text {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
+}
+
+.teem-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* container clients */
@@ -369,6 +376,8 @@ img {
 /* footer */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .footer-link {
@@ -400,7 +409,7 @@ img {
 }
 .footer .page-logo {
   color: var(--primary-white-color);
-  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .footer .page-logo:hover {
   color: var(--accent-color);
@@ -413,10 +422,15 @@ img {
 }
 
 .footer .link-list {
-  margin-top: 20px;
-  margin-bottom: 60px;
-
   list-style: none;
+}
+
+.footer li {
+  margin-bottom: 9px;
+}
+
+.footer li:last-child {
+  margin-bottom: 0;
 }
 
 /* button */
@@ -435,6 +449,10 @@ img {
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .button.current {
@@ -457,8 +475,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-
-  margin-left: 24px;
 }
 .portfolio-title {
   opacity: 0;
@@ -466,14 +482,13 @@ img {
   height: 0;
 }
 
-.portfolio-title section {
+.section-list .list {
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-list .list {
-  margin-left: auto;
-  margin-right: auto;
+.section-list.button {
+  margin-bottom: 50px;
 }
 
 .container.portfolio .section-list {
@@ -483,31 +498,21 @@ img {
 }
 
 .section.portfolio {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 94px; */
-}
 
-.container-list {
   display: block;
-  width: 1200px;
-  margin-top: 50px;
-  margin-bottom: 94px;
 }
 
-.container-list .title {
-  margin-top: 20px;
+.portfolio-link {
+  padding: 20px 24px;
 }
 
-.container-list .title {
+.container.portfolio .title {
   text-align: left;
-  margin-left: 24px;
 }
 
-.container-list .list-item {
+.container.portfolio .list-item {
   justify-content: space-between;
 
   width: 370px;
@@ -518,18 +523,24 @@ img {
   background: #ffffff;
   border: 1px solid #eeeeee;
 }
-.container-list .list-item:nth-child(3n) {
+.container.portfolio .list-item:nth-child(3n) {
   margin-right: 0;
 }
 
-.container-list .section-list {
+.container.portfolio .section-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
-.container-list .list-item:focus,
-.container-list .list-item:hover {
+.section-list.btn {
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
+.container.portfolio .list-item:focus,
+.container.portfolio .list-item:hover {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
