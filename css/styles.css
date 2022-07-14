@@ -534,9 +534,13 @@ img {
   justify-content: center;
 }
 
-.section-list.btn {
+.section-button {
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 50px;
+  justify-content: center;
+  list-style: none;
 }
 
 .container.portfolio .list-item:focus,
